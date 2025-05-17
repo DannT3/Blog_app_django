@@ -6,7 +6,7 @@ def post_list(request):
     return render(
         request,
         'blog/post/list.html',
-        {'posts: posts'}
+        {'posts': posts}
     )
 
 def post_detail(request, id):
@@ -20,3 +20,4 @@ def post_detail(request, id):
         'blog/post/detail.html',
         {'post': post}
     )
+
